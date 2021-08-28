@@ -1,254 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ackerman | Blog</title>
-    <title>Blog personal donde se suben noticas proyectos del dia todos los dia,
-      donde pueden saber que pasa en cualquier lugar del mundo aca te informamos sobre todo.
-    </title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Pokémon | Blog</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="hero">
-      <div class="container">
-        <nav class="nav">
-          <a href="noticias.html" class="nav__items nav__items--cta">Noticias nuevas</a>
-          <a href="sobre-mi.html" class="nav__items">Sobre mi</a>
-          <a href="#" class="nav__items">Proyectos</a>
-        </nav>
-        <section class="hero__container">
-          <div class="hero__texts">
-            <h1 class="hero__title">
-              Hola soy Esteban Ackerman [Frontend developer]
-            </h1>
-            <h2 class="hero__subtitle">Tranformando ideas a realidades</h2>
-            <a href="#" class="hero__cta">Contactame ahora</a>
-          </div>
-        </section>
-      </div>
-      <div class="hero__wave" style="overflow: hidden;">
-        <svg
-          viewBox="0 0 500 150"
-          preserveAspectRatio="none"
-          style="height: 100%; width: 100%;"
-        >
-          <path
-            d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-            style="stroke: none; fill: #fff;"
-          ></path>
-        </svg>
+    <header class="header" id="inicio">
+      <img src="img/hamburguesa.svg" alt="" class="hamburger"/>
+      <nav class="menu-navegacion">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicio">Servicio</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#descargas">Descargas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="contenedor head">
+        <h1 class="titulo">Todo sobre el mundo de Pokémon Go</h1>
+        <p class="copy">
+          la mejor pagina sobre el mundo de Pokémon Go.
+        </p>
       </div>
     </header>
-
     <main>
-      <section class="presentation container">
-        <img
-          src="assets/Ackerman.jpg"
-          alt="hombre crusado de brazos "
-          class="presentation__picture"
-        />
-        <h2 class="subtitle">Mi nombre es Ackerman Vanegas</h2>
-        <p class="presentation__copy">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
-          voluptatum corporis incidunt porro aut. Dolorem, nobis quis fuga, quas
-          quos, nihil praesentium totam exercitationem consequatur iure
-          temporibus officia iste numquam?
-        </p>
-        <a href="#" class="presentation__cta">Contactame ahora</a>
-      </section>
-      <section class="about container">
-        <div class="about__texts">
-          <h2 class="subtitle">Mis habilidades</h2>
-          <p class="about__paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-            fuga id modi praesentium, eos excepturi iure! Ratione expedita
-            voluptate alias amet, numquam quo nostrum vel cupiditate magni fuga
-            autem quibusdam!
-          </p>
-
-          <p class="about__paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-            fuga id modi praesentium, eos excepturi iure! Ratione expedita
-            voluptate alias amet, numquam quo nostrum vel cupiditate magni fuga
-            autem quibusdam!
-          </p>
-        </div>
-
-        <figure class="about__img">
-          <img
-            src="assets/pc.png"
-            alt="computador con una pagina wed abierta"
-            class="about__picture"
-          />
-        </figure>
-
-        <figure class="about__img about__img--left">
-          <img
-            src="assets/cod.svg.svg"
-            alt="personaje ilustrado utilizando un computador"
-            class="about__picture"
-          />
-        </figure>
-
-        <div class="about__texts">
-          <h2 class="subtitle">Sobre mi trabajo</h2>
-          <p class="about__paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-            fuga id modi praesentium, eos excepturi iure! Ratione expedita
-            voluptate alias amet, numquam quo nostrum vel cupiditate magni fuga
-            autem quibusdam!
-          </p>
-
-          <p class="about__paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-            fuga id modi praesentium, eos excepturi iure! Ratione expedita
-            voluptate alias amet, numquam quo nostrum vel cupiditate magni fuga
-            autem quibusdam!
-          </p>
-        </div>
-      </section>
-
-      <section class="projects">
-        <div class="container">
-          <h2 class="subtitle">Mis Projectos</h2>
-          <div class="projects__grid">
-            <article class="projects__item">
-              <img
-                src="assets/img-1.jpg"
-                alt="hombre con protesis en las piernas sentado con unas gafas de realidad virtual"
-                class="projects__img"
-              />
-              <div class="projects__hover">
-                <h2 class="projects__title">Proyecto</h2>
-                <i class="far fa-file-alt projects__icon "></i>
-              </div>
-            </article>
-
-            <article class="projects__item">
-              <img
-                src="assets/img-2.jpg"
-                alt="Consola de video juegos xbox one"
-                class="projects__img"
-              />
-              <div class="projects__hover">
-                <h2 class="projects__title">Proyecto</h2>
-                <i class="far fa-file-alt projects__icon "></i>
-              </div>
-            </article>
-
-            <article class="projects__item">
-              <img
-                src="assets/img-3.jpg"
-                alt="una persona sosteniendo una mando de video juegos frente a un televisor"
-                class="projects__img"
-              />
-              <div class="projects__hover">
-                <h2 class="projects__title">Proyecto</h2>
-                <i class="far fa-file-alt projects__icon "></i>
-              </div>
-            </article>
-
-            <article class="projects__item">
-              <img
-                src="assets/img-4.jpg"
-                alt="celular iphone 12 pro boca abajo en una mesa"
-                class="projects__img"
-              />
-              <div class="projects__hover">
-                <h2 class="projects__title">Proyecto</h2>
-                <i class="far fa-file-alt projects__icon "></i>
-              </div>
-            </article>
-
-            <article class="projects__item">
-              <img
-                src="assets/img-5.jpg"
-                alt="imagen del planeta tierra desde el espacio"
-                class="projects__img"
-              />
-              <div class="projects__hover">
-                <h2 class="projects__title">Proyecto</h2>
-                <i class="far fa-file-alt projects__icon "></i>
-              </div>
-            </article>
+      <section class="contenedor" id="servicio">
+        <h2 class="subtitulo">Nuestro servicio</h2>
+        <div class="contenedor-servicio">
+          <img src="img/hero2.png" alt="" />
+          <div class="checklist-servicio">
+            <div class="service">
+              <h3 class="n-service"><span class="number">1</span>Galeria de imagenes</h3>
+              <p>
+                Una zona con galeria de imagenes con las imagenes de los ultimos eventos del juego.
+              </p>
+            </div>
+            <div class="service">
+              <h3 class="n-service"><span class="number">2</span>Descargas</h3>
+              <p>
+                Una zona de descargas directas con las apk mas actualizadas en su ultima version como Wecatch y Pgsharp.
+              </p>
+            </div>
+            <div class="service">
+              <h3 class="n-service"><span class="number">3</span>Contactos</h3>
+              <p>
+                Una zona con todos los Contactos link directos hacia los grupos de Whatsapp, Telegram y Facebook.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-
-      <section class="testimony container">
-        <h2 class="subtitle">¿Que dicen de nosotros?</h2>
-
-        <div class="testimony__grid">
-          <article class="testimony__item">
-            <div class="testimony__person">
-              <img
-                src="assets/man.jpg"
-                alt="hombre con pelo crespo frente a la camara"
-                class="testimony__img"
-              />
-              <div class="testimony__texts">
-                <h3 class="testimonny__name">Ackerman Vanegas</h3>
-                <p class="testimony__verification">Creador de apple</p>
+      <section class="gallery" id="galeria">
+          <div class="contenedor">
+              <h2 class="subtitulo">Galeria</h2>
+              <div class="contenedor-galeria">
+                  <img src="img/uno.jpg" alt="Noticias de pokemon go" class="img-galeria">
+                  <img src="img/dos.jpg" alt="Noticias de pokemon go" class="img-galeria">
+                  <img src="img/tres.jpg" alt="Noticias de pokemon go" class="img-galeria">
+                  <img src="img/cuatro.jpg" alt="Noticias de pokemon go" class="img-galeria">
+                  <img src="img/cinco.jpg" alt="Noticias de pokemon go" class="img-galeria">
+                  <img src="img/seis.jpg" alt="Noticias de pokemon go" class="img-galeria">
               </div>
-            </div>
-            <p class="testimony__review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur porro harum at aspernatur atque repudiandae expedita
-              quidem fuga saepe dolorem!
-            </p>
-          </article>
 
-          <article class="testimony__item">
-            <div class="testimony__person">
-              <img
-                src="assets/man2.jpg"
-                alt="hombre con pelo crespo frente a la camara"
-                class="testimony__img"
-              />
-              <div class="testimony__texts">
-                <h3 class="testimonny__name">Esteban Vanegas</h3>
-                <p class="testimony__verification">Creador de amazon</p>
+          </div>
+      </section>
+      <section class="imagen-light">
+          <img src="img/close.svg" alt="" class="close">
+          <img class="agregar-imagen" src="" alt="">
+      </section>
+      <section class="contenedor" id="descargas">
+          <h2 class="subtitulos">Descargas :</h2>
+          <section class="experts">
+              <div class="cont-expert">
+                  <img src="img/wecatch.svg" alt="Noticias de pokemon go">
+                  <a class="n-expert" href="https://github.com/daydreamer1222/WeCatch-Android/releases/download/v4.4.0/wecatch.apk">Descargas</a>
               </div>
-            </div>
-            <p class="testimony__review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur porro harum at aspernatur atque repudiandae expedita
-              quidem fuga saepe dolorem!
-            </p>
-          </article>
-        </div>
+              <div class="cont-expert">
+                  <img src="img/pgsharp.svg" alt="Noticias de pokemon go">
+                  <a class="n-expert" href="https://www.pgsharp.com/download">Pgsharp</a>
+              </div>
+          </section>
       </section>
     </main>
-    <footer class="footer">
-      <div class="contaier footer__grid">
-        <nav class="nav nav--footer">
-          <a class="nav__items nav__items--footer" href="index.html">Inicio</a>
-          <a class="nav__items nav__items--footer" href="noticias.html">Noticias</a>
-          <a class="nav__items nav__items--footer" href="sobre-mi.html">Sobre mi</a>
-          <a class="nav__items nav__items--footer" href="">Proyectos</a>
-        </nav>
-        <section class="footer__contact">
-          <h3 class="footer__title">Contactame</h3>
-          <div class="footer__icons">
-            <span class="footer__container-icons">
-              <a class="fab fa-facebook-f footer__icon" href="#"></a>
-            </span>
-            <span class="footer__container-icons">
-              <a class="fab fa-whatsapp footer__icon" href="#"></a>
-            </span>
-            <span class="footer__container-icons">
-              <a class="fab fa-twitter footer__icon" href="#"></a>
-            </span>
-          </div>
-        </section>
-      </div>
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">Pokémon | Blog</h2>
+                <p>la mejor pagina sobre el mundo de Pokémon Go</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/groups/236696591247581/?ref=share" class="social-media-icon">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="https://t.me/joinchat/EtjEgtLp2F0yM2Fh" class="social-media-icon">
+                    <i class='bx bxl-telegram'></i>
+                </a>
+                <a href="https://chat.whatsapp.com/DkG2eH8oeKYDY91lqyy0FT" class="social-media-icon">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
     </footer>
 
-    <script
-      src="https://kit.fontawesome.com/f63ca49e48.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
   </body>
 </html>
